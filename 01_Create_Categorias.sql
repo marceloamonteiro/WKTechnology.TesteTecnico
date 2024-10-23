@@ -1,0 +1,9 @@
+﻿CREATE TABLE Categorias(
+	CategoriaId INT AUTO_INCREMENT PRIMARY KEY,
+	CategoriaGuid VARCHAR(50) UNIQUE NOT NULL, 
+	Nome VARCHAR(100) NOT NULL,
+	Descricao VARCHAR(5000) NULL,
+	DataCriacao DATETIME NOT NULL,
+	DataAlteracao DATETIME NULL,
+	Ativo BIT DEFAULT 1
+) ENGINE = innodb;
